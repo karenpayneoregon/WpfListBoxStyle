@@ -4,6 +4,14 @@
              xmlns:local="clr-namespace:WpfAppExample1"
              StartupUri="ListWindow1.xaml">
     <Application.Resources>
-         
+
+        <LinearGradientBrush x:Key="StackPanelLgb" StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#ACC6E0" Offset="0.5"/>
+            <GradientStop Color="#DCE7F5" Offset="0.719"/>
+        </LinearGradientBrush>
+
+        <Style TargetType="StackPanel">
+            <Setter Property="Background" Value="{StaticResource StackPanelLgb}"/>
+        </Style>
     </Application.Resources>
 </Application>
