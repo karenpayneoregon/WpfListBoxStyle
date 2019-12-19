@@ -10,10 +10,7 @@ namespace WpfAppExample1.Classes
     public static class FocusBehavior
     {
         public static readonly DependencyProperty GiveInitialFocusProperty =
-            DependencyProperty.RegisterAttached(
-                "GiveInitialFocus",
-                typeof(bool),
-                typeof(FocusBehavior),
+            DependencyProperty.RegisterAttached("GiveInitialFocus",typeof(bool),typeof(FocusBehavior),
                 new PropertyMetadata(false, OnFocusFirstPropertyChanged));
 
         public static bool GetGiveInitialFocus(Control control) => (bool)control.GetValue(GiveInitialFocusProperty);
@@ -22,12 +19,18 @@ namespace WpfAppExample1.Classes
         private static void OnFocusFirstPropertyChanged(DependencyObject sender, DependencyPropertyChangedEventArgs args)
         {
             if (!(sender is Control control) || !(args.NewValue is bool))
+            {
                 return;
+            }
 
             if ((bool)args.NewValue)
+            {
                 control.Loaded += OnControlLoaded;
+            }
             else
+            {
                 control.Loaded -= OnControlLoaded;
+            }
         }
 
         private static void OnControlLoaded(object sender, RoutedEventArgs e) => 
