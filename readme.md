@@ -1,4 +1,4 @@
-# WPF/C# ListBox style and binding
+# WPF ListBox style and binding
 Provides examples for displaying columnized information in a ListBox in C# and Visual Basic.
 
 ### About
