@@ -6,7 +6,7 @@
         xmlns:classes="clr-namespace:WpfAppExample1.Classes"
         mc:Ignorable="d" 
         classes:FocusBehavior.GiveInitialFocus="True"
-        Title="ListBox style/binding" 
+        Title="C# ListBox style/binding" 
         Height="471.593" Width="491.394" 
         WindowStartupLocation="CenterScreen"
         d:DataContext="{d:DesignData }" 

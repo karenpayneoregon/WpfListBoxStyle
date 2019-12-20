@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:WpfAppExample2"
         xmlns:classes="clr-namespace:WpfAppExample2.Classes"
         mc:Ignorable="d"
-        Title="MainWindow" 
+        classes:FocusBehavior.GiveInitialFocus="True"
+        Title="VB.NET ListBox style/binding" 
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
         Height="472" Width="491" >
@@ -86,7 +87,7 @@
                         <Style.Triggers>
 
                             <DataTrigger Binding="{Binding TaskType}" Value="Home">
-                                <Setter Property="Background" Value="LightCyan" />
+                                <Setter Property="Background" Value="Yellow" />
                             </DataTrigger>
                             <DataTrigger Binding="{Binding TaskType}" Value="Work">
                                 <Setter Property="Background" Value="White" />

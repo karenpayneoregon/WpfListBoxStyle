@@ -52,11 +52,15 @@ Namespace Classes
         Public Overrides Function ToString() As String
             Return TaskName
         End Function
-        Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+        Public Event PropertyChanged As PropertyChangedEventHandler _
+            Implements INotifyPropertyChanged.PropertyChanged
 
         <NotifyPropertyChangedInvocator>
-        Protected Overridable Sub OnPropertyChanged(<CallerMemberName> Optional ByVal propertyName As String = Nothing)
+        Protected Overridable Sub OnPropertyChanged(<CallerMemberName>
+            Optional ByVal propertyName As String = Nothing)
+
             PropertyChangedEvent?.Invoke(Me, New PropertyChangedEventArgs(propertyName))
+
         End Sub
     End Class
 End Namespace
