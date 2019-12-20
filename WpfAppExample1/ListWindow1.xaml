@@ -63,7 +63,7 @@
                     <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Description}" Margin="0,0,0,3"/>
 
                     <TextBlock HorizontalAlignment="Right" Grid.Row="2" Grid.Column="0" Text="Priority:" Padding="0,0,10,0"/>
-                    <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Priority}" Margin="0,3,0,0"/>
+                    <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Priority}" Margin="0,3,0,0" PreviewTextInput="NumberValidation"  />
                 </Grid>
             </Border>
         </DataTemplate>
