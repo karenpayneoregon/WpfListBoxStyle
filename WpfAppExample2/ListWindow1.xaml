@@ -43,6 +43,11 @@
 
         <DataTemplate x:Key="CurrentDetailsTemplate"  DataType="classes:TaskItem">
             <Border  Background="#DCE7F5" BorderBrush="Silver" CornerRadius="4,4,4,4" Width="Auto" Height="100" Margin="32,20,30,20"  BorderThickness=".85" Padding="8">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="10" 
+                                      ShadowDepth="0" 
+                                      Color="Black"/>
+                </Border.Effect>
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="28*"/>
@@ -83,6 +88,11 @@
                      VerticalAlignment="Top" Width="417" HorizontalContentAlignment="Stretch" 
                      IsSynchronizedWithCurrentItem="True" 
                      ItemTemplate="{StaticResource ListBoxTaskTemplate}" ItemsSource="{Binding TaskItemsList, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+
+                <ListBox.Effect>
+                    <DropShadowEffect ShadowDepth="2"/>
+                </ListBox.Effect>
+
                 <ListBox.ItemContainerStyle>
 
                     <Style TargetType="{x:Type ListBoxItem}">
