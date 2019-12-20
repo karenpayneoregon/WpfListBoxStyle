@@ -20,7 +20,7 @@ Class MainWindow
     ''' </summary>
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
-    Private Sub NumberValidation(ByVal sender As Object, ByVal e As TextCompositionEventArgs)
+    Private Sub NumberValidation(sender As Object, e As TextCompositionEventArgs)
         Dim regex = New Regex("[^0-9]+")
         e.Handled = regex.IsMatch(e.Text)
     End Sub

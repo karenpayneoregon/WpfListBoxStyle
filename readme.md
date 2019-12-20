@@ -9,7 +9,7 @@ Code samples are based off Microsoft docs, [Data Templating Overview](https://do
 Both projects have styles in app.xaml for C# and Application.xaml for Visual Basic.
 
 ---
-TechNet article location TBA
+[TechNet article location](https://social.technet.microsoft.com/wiki/contents/articles/53502.wpf-listbox-data-templatingstyling.aspx)
 
 ---
 
