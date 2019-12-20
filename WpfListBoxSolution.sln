@@ -12,6 +12,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WpfAppExample2", "WpfAppExample2\WpfAppExample2.vbproj", "{691685A6-5C9E-41BA-836D-0043654C1241}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "C Sharp example", "C Sharp example", "{B905B8A4-9916-4F02-97AC-A17625E431F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Visual Basic example", "Visual Basic example", "{1266347C-97CF-4498-935D-CA2873A7910B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +33,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FFA9C1EF-7525-43BC-A08D-1BF09A8F4DAD} = {B905B8A4-9916-4F02-97AC-A17625E431F2}
+		{691685A6-5C9E-41BA-836D-0043654C1241} = {1266347C-97CF-4498-935D-CA2873A7910B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D84E92E2-6DB0-408D-A37E-69832EAB51CF}
